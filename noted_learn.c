@@ -1,6 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <string>
+#include <stdio.h>
 
 // Check if the correct path to OpenCV header is used
 // #include <opencv2/opencv.hpp>
@@ -11,9 +9,6 @@
 void saveText(char filename[], char text[]) {
     printf("filename %s\n", filename);
     printf("text %s\n", text);
-}
-void main (){
-    saveText("a.txt", "hello world");
     FILE *fptr;
 
     fptr = fopen("a.txt", "w");
@@ -21,6 +16,11 @@ void main (){
     fprintf(fptr, "hello world");
 
     fclose(fptr);
+}
+void main (){
+    saveText("a.txt", "hello world a");
+    saveText("b.txt", "hello world b");
+    saveText("c.txt", "hello world c");
 }
 // Function to save an image to a file (assuming OpenCV)
 // void saveImage(const string& filename, const cv::Mat& image) {
