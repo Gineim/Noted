@@ -1,23 +1,21 @@
 #include<stdio.h>
 
 void myFunction(char name[], int age){
-    printf("%s.%d\n", name, age);
+    printf("Hello %s.You are %d\n", name, age);
 }
 
-    int main() {
+int main() {
     char r;
-        printf ("Enter Name: " ) ;
-        scanf ("%s", &r) ;
-        // printf ("Name = %s\n");
+    printf ("Enter Name: " ) ;
+    scanf ("%s", &r) ;
     int k;
-        printf ("Enter Age: " ) ;
-        scanf ("%d", &k) ;
-    // int old;
-    // scanf ("%d", &old);
+    printf ("Enter Age: " ) ;
+    scanf ("%d", &k) ;
+
     if (k <= 50) {
-        printf("Just a kid");
+        printf("Hello %c.You are %d Just a kid.\n", r, k);
     } else if (k >= 50){
-        printf("Danm old man");
+        printf("Hello %c.You are %d Danm old man.\n", r, k);
     } else {
         printf("try again");
     }
