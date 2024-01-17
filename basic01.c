@@ -7,7 +7,7 @@ void myFunction(char name[], int age){
     int main() {
     char r;
         printf ("Enter Name: " ) ;
-        scanf ("%c", &r) ;
+        scanf ("%s", &r) ;
         // printf ("Name = %s\n");
     int k;
         printf ("Enter Age: " ) ;
